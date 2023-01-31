@@ -3,8 +3,9 @@
 
 <p>
  <% if current_user.avatar.attached? %>
-   <%= image_tag current_user.avatar %>
- <% end %>
+    <label>Avatar:</label>
+    <%= image_tag current_user.avatar, width: "200" %>
+<% end %>
 </p>
 
 <h3>メールアドレス：
